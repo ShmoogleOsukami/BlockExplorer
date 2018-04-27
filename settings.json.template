@@ -5,15 +5,15 @@
 */
 {
   // name your instance!
-  "title": "IQUIDUS",
+  "title": "Gridcoin Block Explorer",
 
-  "address": "127.0.0.1:3001",
+  "address": "127.0.0.1:80",
 
   // coin name
-  "coin": "Darkcoin",
+  "coin": "Gridcoin",
 
   // coin symbol
-  "symbol": "DRK",
+  "symbol": "GRC",
 
   // logo
   "logo": "/images/logo.png",
@@ -29,7 +29,7 @@
   "theme": "Cyborg",
 
   // port to listen for requests on.
-  "port" : 3001,
+  "port" : 80,
 
   // database settings (MongoDB)
   "dbsettings": {
@@ -48,12 +48,12 @@
   "wallet": {
     "host": "localhost",
     "port": 9332,
-    "user": "darkcoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "user": "94DrntU366Fr9YwSn7BWbJG2",
+    "pass": "xTCgMwCfke86G4wgDXsPcFXu"
   },
 
   // confirmations
-  "confirmations": 40,
+  "confirmations": 110,
 
   // language settings
   "locale": "locale/en.json",
@@ -63,7 +63,7 @@
     "api": true,
     "markets": true,
     "richlist": true,
-    "twitter": true,
+    "twitter": false,
     "facebook": false,
     "googleplus": false,
     "search": true,
@@ -74,7 +74,7 @@
   // index page (valid options for difficulty are POW, POS or Hybrid)
   "index": {
     "show_hashrate": true,
-    "difficulty": "POW",
+    "difficulty": "POS",
     "last_txs": 100
   },
 
@@ -90,7 +90,7 @@
   //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex
   //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "JBS",
+    "coin": "GRC",
     "exchange": "BTC",
     "enabled": ["bittrex"],
     "cryptopia_id": "1658",
@@ -115,13 +115,13 @@
   },
 
   // twitter, facebook, googleplus
-  "twitter": "iquidus",
+  "twitter": "NeuralMiner",
   "facebook": "yourfacebookpage",
   "googleplus": "yourgooglepluspage",
 
   //genesis
-  "genesis_tx": "65f705d2f385dc85763a317b3ec000063003d6b039546af5d8195a5ec27ae410",
-  "genesis_block": "b2926a56ca64e0cd2430347e383f63ad7092f406088b9b86d6d68c2a34baef51",
+  "genesis_tx": "5109d5782a26e6a5a5eb76c7867f3e8ddae2bff026632c36afec5dc32ed8ce9f",
+  "genesis_block": "000005a247b397eadfefa58e872bc967c2614797bdc8d4d0e6b09fea5c191599",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
@@ -138,7 +138,7 @@
   // HEAVY: retreive from heavys getsupply api call
   // BALANCES : total of all address balances
   // TXOUTSET : retreive from gettxoutsetinfo api call
-  "supply": "COINBASE",
+  "supply": "GETINFO",
 
   // how to acquire network hashrate
   // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s
