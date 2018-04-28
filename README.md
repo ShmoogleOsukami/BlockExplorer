@@ -41,13 +41,13 @@ Set the RPC ID and password for your gridcoinresearchd instance on lines 46-47.
 
     npm start
 
-*note: mongod must be running to start the explorer*
+*Note: mongod must be running to start the explorer.*
 
 As of version 1.4.0 the explorer defaults to cluster mode, forking an instance of its process to each cpu core. This results in increased performance and stability. Load balancing gets automatically taken care of and any instances that for some reason die, will be restarted automatically. For testing/development (or if you just wish to) a single instance can be launched with:
 
     node --stack-size=10000 bin/instance
 
-To stop the cluster you can use
+To stop the cluster you can use:
 
     npm stop
 
@@ -89,6 +89,11 @@ The wallet must be running with atleast the following flags:
 
     -daemon -txindex
 
+Or set the following in your gridcoinresearch.conf file:
+
+	daemon=1
+	txindex=1
+
 ### Known Issues
 
 **script is already running.**
@@ -103,17 +108,15 @@ If you receive this message when launching the sync script either a) a sync is c
 
 Nodes default stack size may be too small to index addresses with many tx's. If you experience the above error while running sync.js the stack size needs to be increased.
 
-To determine the default setting run
+To determine the default setting run:
 
     node --v8-options | grep -B0 -A1 stack_size
 
-To run sync.js with a larger stack size launch with
+To run sync.js with a larger stack size launch with:
 
     node --stack-size=[SIZE] scripts/sync.js index update
 
 Where [SIZE] is an integer higher than the default.
-
-*note: SIZE will depend on which blockchain you are using, you may need to play around a bit to find an optimal setting*
 
 ### License
 
