@@ -43,8 +43,8 @@
   "wallet": {
     "host": "localhost",
     "port": 9332,
-    "user": "94DrntU366Fr9YwSn7BWbJG2",
-    "pass": "xTCgMwCfke86G4wgDXsPcFXu"
+    "user": "RPC ID",
+    "pass": "RPC PW"
   },
 
   // confirmations

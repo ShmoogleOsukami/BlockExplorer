@@ -17,15 +17,11 @@ Enter MongoDB cli:
 
 Create databse:
 
-    > use explorerdb
+    use explorerdb
 
 Create user with read/write access:
 
-    > db.createUser( { user: "iquidus", pwd: "3xp!0reR", roles: [ "readWrite" ] } )
-
-*note: If you're using mongo shell 2.4.x, use the following to create your user:
-
-    > db.addUser( { user: "username", pwd: "password", roles: [ "readWrite"] })
+    db.createUser( { user: "gridcoin", pwd: "u9WdcVgMVqvHcDz7", roles: [ "readWrite" ] } )
 
 ### Get the source
 
@@ -34,12 +30,12 @@ Create user with read/write access:
 ### Install node modules
 
     cd explorer && npm install --production
+	
+### Edit settings.json
 
-### Configure
-
-    cp ./settings.json.template ./settings.json
-
-*Make required changes in settings.json*
+	vi settings.json
+	
+Set the RPC ID and password for your gridcoinresearchd instance on lines 46-47.
 
 ### Start Explorer
 
