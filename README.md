@@ -29,7 +29,7 @@ Create user with read/write access:
 
 ### Install node modules
 
-    cd explorer && npm install --production
+    cd explorer && sudo npm install --production
 	
 ### Edit settings.json
 
@@ -39,7 +39,7 @@ Set the RPC ID and password for your gridcoinresearchd instance on lines 46-47.
 
 ### Start Explorer
 
-    npm start
+    sudo npm start
 
 *Note: mongod must be running to start the explorer.*
 
@@ -49,7 +49,7 @@ As of version 1.4.0 the explorer defaults to cluster mode, forking an instance o
 
 To stop the cluster you can use:
 
-    npm stop
+    sudo npm stop
 
 ### Syncing databases with the blockchain
 
