@@ -68,7 +68,7 @@
 
   // index page (valid options for difficulty are POW, POS or Hybrid)
   "index": {
-    "show_hashrate": true,
+    "show_hashrate": false,
     "difficulty": "POS",
     "last_txs": 100
   },
