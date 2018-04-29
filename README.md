@@ -53,7 +53,7 @@ To stop the cluster you can use:
 
 ### Syncing databases with the blockchain
 
-sync.js (located in scripts/) is used for updating the local databases. This script must be called from the explorers root directory.
+sync.js (located in scripts/) is used for updating the local databases. This script must be called from the explorer's root directory.
 
     Usage: node scripts/sync.js [database] [mode]
 
@@ -69,7 +69,7 @@ sync.js (located in scripts/) is used for updating the local databases. This scr
     notes:
     * 'current block' is the latest created block when script is executed.
     * The market database only supports (& defaults to) reindex mode.
-    * If check mode finds missing data(ignoring new data since last sync),
+    * If check mode finds missing data (ignoring new data since last sync),
       index_timeout in settings.json is set too low.
 
 
@@ -85,7 +85,7 @@ sync.js (located in scripts/) is used for updating the local databases. This scr
 
 ### Wallet
 
-The wallet must be running with atleast the following flags:
+The wallet must be running with at least the following flags:
 
     -daemon -txindex
 
@@ -98,7 +98,7 @@ Or set the following in your gridcoinresearch.conf file:
 
 **script is already running.**
 
-If you receive this message when launching the sync script either a) a sync is currently in progress, or b) a previous sync was killed before it completed. If you are certian a sync is not in progress remove the index.pid from the tmp folder in the explorer root directory.
+If you receive this message when launching the sync script either a) a sync is currently in progress, or b) a previous sync was killed before it completed. If you are certain a sync is not in progress, remove the index.pid from the tmp folder in the explorer root directory.
 
     rm tmp/index.pid
 
@@ -106,7 +106,7 @@ If you receive this message when launching the sync script either a) a sync is c
 
     RangeError: Maximum call stack size exceeded
 
-Nodes default stack size may be too small to index addresses with many tx's. If you experience the above error while running sync.js the stack size needs to be increased.
+Node's default stack size may be too small to index addresses with many tx's. If you experience the above error while running sync.js, the stack size needs to be increased.
 
 To determine the default setting run:
 
