@@ -117,9 +117,6 @@
   "genesis_tx": "c93aa81dbdede0477f1aa8876029d1094642841361eaad0a1de02d8a8fe0376f",
   "genesis_block": "000003b082ab3c494b1cf529a6edbbf2d1acfe1cb189a7af799c377e0e5e8ed7",
 
-  //heavy (enable/disable additional heavy features)
-  "heavy": false,
-
   //amount of txs to index per address (stores latest n txs)
   "txcount": 100,
 
@@ -129,7 +126,6 @@
   // how to calculate current coin supply
   // COINBASE : total sent from coinbase (PoW)
   // GETINFO : retreive from getinfo api call (PoS)
-  // HEAVY: retreive from heavys getsupply api call
   // BALANCES : total of all address balances
   // TXOUTSET : retreive from gettxoutsetinfo api call
   "supply": "GETINFO",
