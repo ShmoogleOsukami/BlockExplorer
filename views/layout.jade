@@ -29,10 +29,10 @@ html
             $("#supply").text(json.data[0].supply);
             $("#difficulty").text(json.data[0].difficulty);
             $("#difficultyHybrid").text(json.data[0].difficultyHybrid);
-            $("#hashrate").text(json.data[0].hashrate);
             $("#lastPrice").text(json.data[0].lastPrice.toFixed(8));
             $("#lblConnections").text(json.data[0].connections + ' connections');
             $("#lblBlockcount").text(json.data[0].blockcount + ' blocks');
+            $("#blockcount").text(json.data[0].blockcount);
             $("#lblX1").text(' ');
           }});
         }
@@ -133,11 +133,11 @@ html
                 strong Blocks
             .panel-body
               if settings.index.difficulty == 'Hybrid'
-               label#hashrate - 
+               label#blockcount - 
                <br>
                label#lblX1  
               else  
-               label#hashrate - 
+               label#blockcount - 
         .col-md-2
           .panel.panel-default.hidden-sm.hidden-xs
             .panel-heading
