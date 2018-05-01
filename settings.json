@@ -134,11 +134,6 @@
   // TXOUTSET : retreive from gettxoutsetinfo api call
   "supply": "GETINFO",
 
-  // how to acquire network hashrate
-  // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s
-  // netmhashps: uses getmininginfo.netmhashpsm returns in MH/s
-  "nethash": "height",
-
   // Address labels
   // example : "JhbrvAmM7kNpwA6wD5KoAsbtikLWWMNPcM": {"label": "This is a burn address", "type":"danger", "url":"http://example.com"}
   // label (required) = test to display
