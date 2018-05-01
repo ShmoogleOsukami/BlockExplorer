@@ -29,10 +29,10 @@ html
             $("#supply").text(json.data[0].supply);
             $("#difficulty").text(json.data[0].difficulty);
             $("#difficultyHybrid").text(json.data[0].difficultyHybrid);
-            $("#hashrate").text(json.data[0].hashrate);
             $("#lastPrice").text(json.data[0].lastPrice.toFixed(8));
             $("#lblConnections").text(json.data[0].connections + ' connections');
             $("#lblBlockcount").text(json.data[0].blockcount + ' blocks');
+            $("#blockcount").text(json.data[0].blockcount);
             $("#lblX1").text(' ');
           }});
         }
@@ -130,25 +130,14 @@ html
         .col-md-2.col-md-offset-1
           .panel.panel-default.hidden-sm.hidden-xs
             .panel-heading
-              if settings.nethash_units == 'K'
-                strong #{settings.locale.network} (KH/s)
-              else if settings.nethash_units == 'M'
-                strong #{settings.locale.network} (MH/s)
-              else if settings.nethash_units == 'G'
-                strong #{settings.locale.network} (GH/s)
-              else if settings.nethash_units == 'T'
-                strong #{settings.locale.network} (TH/s)
-              else if settings.nethash_units == 'P'
-                strong #{settings.locale.network} (PH/s)
-              else if settings.nethash_units == 'H'
-                strong #{settings.locale.network} (H/s)
+                strong Blocks
             .panel-body
               if settings.index.difficulty == 'Hybrid'
-               label#hashrate - 
+               label#blockcount - 
                <br>
                label#lblX1  
               else  
-               label#hashrate - 
+               label#blockcount - 
         .col-md-2
           .panel.panel-default.hidden-sm.hidden-xs
             .panel-heading
