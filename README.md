@@ -119,6 +119,4 @@ To run sync.js with a larger stack size launch with:
 
 Where [SIZE] is an integer higher than the default.
 
-### License
-
-[License](LICENSE)
+### [License](LICENSE)
