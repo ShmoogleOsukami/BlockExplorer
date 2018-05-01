@@ -9,6 +9,17 @@ An open source block explorer written in node.js.
 *  mongodb 2.6.x
 *  gridcoinresearchd
 
+### Wallet
+
+The wallet must be running with the following flags:
+
+    -daemon -txindex
+
+Or set the following in your gridcoinresearch.conf file:
+
+	daemon=1
+	txindex=1
+
 ### Create database
 
 Enter MongoDB cli:
@@ -43,7 +54,7 @@ Set the RPC ID and password for your gridcoinresearchd instance on lines 46-47.
 
 *Note: mongod must be running to start the explorer.*
 
-As of version 1.4.0 the explorer defaults to cluster mode, forking an instance of its process to each cpu core. This results in increased performance and stability. Load balancing gets automatically taken care of and any instances that for some reason die, will be restarted automatically. For testing/development (or if you just wish to) a single instance can be launched with:
+Load balancing gets automatically taken care of and any instances that for some reason die, will be restarted automatically. For testing/development (or if you just wish to) a single instance can be launched with:
 
     node --stack-size=10000 bin/instance
 
@@ -83,16 +94,6 @@ sync.js (located in scripts/) is used for updating the local databases. This scr
     */2 * * * * cd /path/to/explorer && /usr/bin/nodejs scripts/sync.js market > /dev/null 2>&1
     */5 * * * * cd /path/to/explorer && /usr/bin/nodejs scripts/peers.js > /dev/null 2>&1
 
-### Wallet
-
-The wallet must be running with at least the following flags:
-
-    -daemon -txindex
-
-Or set the following in your gridcoinresearch.conf file:
-
-	daemon=1
-	txindex=1
 
 ### Known Issues
 
