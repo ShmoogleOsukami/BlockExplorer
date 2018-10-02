@@ -46,7 +46,7 @@ Create user with read/write access:
 
 	vi settings.json
 	
-Set the RPC ID and password for your gridcoinresearchd instance on lines 46-47.
+Set the RPC ID and password for your gridcoinresearchd instance (found in your gridcoinresearch.conf file) on lines 46-47.
 
 ### Start Explorer
 
