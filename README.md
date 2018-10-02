@@ -6,7 +6,7 @@ An open source block explorer written in node.js.
 ### Requires
 
 *  node.js >= 0.10.28
-*  mongodb 2.6.x
+*  mongodb >= 2.6.x
 *  gridcoinresearchd
 
 ### Wallet
