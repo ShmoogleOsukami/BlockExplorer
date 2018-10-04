@@ -75,6 +75,7 @@ To stop the cluster you can use:
 sync.js (located in scripts/) is used for updating the local databases. This script must be called from the explorer's root directory.
 
     Usage: node scripts/sync.js [database] [mode]
+    Example: node scripts/sync.js index update
 
     database: (required)
     index [mode] Main index: coin info/stats, transactions & addresses
