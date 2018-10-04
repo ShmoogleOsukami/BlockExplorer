@@ -13,10 +13,6 @@ Installing node.js/npm:
 
 https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 
-Installing mongodb:
-
-https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
-
 You can quickly install gridcoinresearchd, including the latest snapshot, using the handy Autonode script located here:
 
 https://github.com/gridcoin-community/Autonode
