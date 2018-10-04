@@ -1,13 +1,25 @@
-WIP - NOT READY FOR DEPLOYMENT
-================
+An open-source block explorer written in node.js.
 
-An open source block explorer written in node.js.
+Tested on Ubuntu Xenial/Bionic.
 
 ### Requires
 
 *  node.js >= 0.10.28
+*  npm >= 1.4.9
 *  mongodb >= 2.6.x
 *  gridcoinresearchd
+
+Installing node.js/npm:
+
+https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+
+Installing mongodb:
+
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+You can quickly install gridcoinresearchd, including the latest snapshot, using the handy Autonode script located here:
+
+https://github.com/gridcoin-community/Autonode
 
 ### Wallet
 
@@ -20,7 +32,7 @@ Or set the following in your gridcoinresearch.conf file:
 	daemon=1
 	txindex=1
 
-### Create database
+### Create Database
 
 Enter MongoDB cli:
 
@@ -34,11 +46,11 @@ Create user with read/write access:
 
     db.createUser( { user: "gridcoin", pwd: "u9WdcVgMVqvHcDz7", roles: [ "readWrite" ] } )
 
-### Get the source
+### Get The Source
 
     git clone https://github.com/gridcoin-community/BlockExplorer.git explorer
 
-### Install node modules
+### Install Node Modules
 
     cd explorer && sudo npm install --production
 	
@@ -62,7 +74,7 @@ To stop the cluster you can use:
 
     sudo npm stop
 
-### Syncing databases with the blockchain
+### Syncing Databases With The Blockchain
 
 sync.js (located in scripts/) is used for updating the local databases. This script must be called from the explorer's root directory.
 
